@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="rpg-dice",
-    version="0.1.0",
+    version="0.2.0",
     author="Paweł Fertyk",
     author_email="pfertyk@pfertyk.me",
     description="A simple dice roller",
