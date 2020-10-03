@@ -1,3 +1,11 @@
 language: python
 script:
-  - pytest
+- pytest
+deploy:
+  provider: pypi
+  username: __token__
+  password:
+    secure: Ip19NfJ3JD7TFoGdcw5XCAEXwIoNvNbN26QKTl2VZcjJXbcgwoxBqZV6OJe/yOqRt7lrQUloHACfqtRM7R1V31Id8FpCkEenCoQ6bkx3BBcBnDIBr9ARFDguP40YoywRyuvhFFI6TB9mmdlqYZJqgelZPaD/51d8921KUjnCE3Ta/JUCnglGrNcAvSzj9r1uUI3qorKit46cLGQGPEA2a0Ket4SyB5JWyt/ZLkZWYBaliZCQI/OKQ3Wiunn4xM9re9geXxhfQlRHJwlF9mtCdByRu5Ab1+q1CLXNLp2ubzpzfETsMi3ua5gA8rMDzBIELvYgFY3al2eOeRk9YgsISHxUI7o0GwYneD3Z46Ng6eJZfbKkseQ7iBMyzM7cMvTq96BXH+B8POKFJ+sG4YIRsgNwTn+nSNv67XUbptefoAarC7bfNehfG3Oy8J71hQ66k0rvfwEGT/6+Tw6R6UB3d4/CJ7LwcNnDRIUqpqkSVaeab8FCZiwuZhi96P2I4EiUrve5GSkkQGbQ9+WmDuj8Z/Bk0orKNjVULjS4HhybKT9Gv8Z6RD3OliZIi8rUeIVfWiDPTeJooARvLmkbRSktey5fMluQFNL2cujA6kL2W5T5D8bhHfcRFSC929BJH/P4CHJuOQscGG/zxzaKCBbiImLzZ0z/eq7M94CJPsP86uc=
+  skip_existing: true
+  on:
+    tags: true
